@@ -214,6 +214,17 @@ nav {
     }
 }
 
+
+
+
+.fotorama__wrap {
+    width:964px !important;
+}
+.fotorama__stage {
+    height:408px !important;
+}
+
+
 .services {
     h2 {
         font-weight: normal;
@@ -399,6 +410,7 @@ nav {
         p {
             font-size: 12px;
             margin: 0 0 20px ;
+            text-indent: 1em;
         }
     }
 }
@@ -452,11 +464,9 @@ nav {
             display: inline;
             a {
                 color:#6d6e71;
-                border:none; 
                 
                 font-size: 12px;
 
-                text-decoration: line-through;
             }
             a.active {
                 border:none;
@@ -470,7 +480,8 @@ nav {
         }
     }
     .gallery {
-        text-align: center;
+        text-align: left;
+        margin: 0 15px;
         .thumb {
             background: #ccc; 
             width:112px;
@@ -487,11 +498,12 @@ nav {
 
 #articles {
     position: relative;
-    padding: 0 35px 130px;
+    padding: 0 35px 30px;
     width:894px;
     .categories {
         z-index: 2;
         line-height:80px;
+        position: absolute;
         li {
             margin: 0 57px 0 0;
         }
@@ -506,12 +518,10 @@ nav {
         margin: 0;
         padding: 0;
         line-height: 80px;
-        position: absolute;
-        top:0;
-        right:0;
-        left:0;
+        display: block;
+        position: relative;
         border-bottom:1px dotted #a5a5a5;
-        margin: 0;
+        margin: 0 -35px;
         padding: 0 35px;
     }
 
@@ -527,6 +537,17 @@ nav {
         p {
             font-size: 11px;  
             width:452px; 
+            text-indent: 1em;
+        }
+        .ill {
+            position: absolute;
+            right:35px;
+            width:424px;
+
+            img {
+                width:424px;
+                margin: 0 0 20px 0;
+            }
         }
         img {
             float: right;
@@ -535,7 +556,7 @@ nav {
 
 
     .articles-categories {
-        margin: 0 -35px;
+        margin: 0 -35px 120px;
         padding: 0 35px;
         height:45px;
         line-height: 45px;
